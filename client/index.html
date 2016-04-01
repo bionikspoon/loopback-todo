@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Todo Application</title>
+   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+   <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="todoApp">
+<div class="container" ng-controller="todoController">
+   <h2>LoopBack Todo Application</h2>
+   <div class="row">
+      <div class="col-md-4">
+         <table class="table table-striped">
+            <tbody>
+            <tr ng-repeat="todo in todos">
+               <td><input type="checkbox" name="isDone" ng-model="todo.isDone" ng-change="update(todo)"/></td>
+               <td>{{todo.title}}</td>
+               <td>
+                  <button class="btn btn-danger btn-xs" ng-click="delete($index)">
+                     <span class="glyphicon glyphicon-trash"></span>
+                  </button>
+               </td>
+            </tr>
+            </tbody>
+         </table>
+      </div>
+   </div><!--row-->
+   <div class="row">
+      <div class="col-md-4">
+         <input type="text" ng-model="todo.title">
+         <button class="btn-primary btn-md" ng-click="add()">Add</button>
+         <i class="fa fa-spinner fa-spin" ng-show="loading"></i>
+      </div>
+   </div><!--row-->
+</div>
+
+<script src="lib/jquery/dist/jquery.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-resource/angular-resource.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lb-services.js"></script>
+</body>
+</html>

@@ -1,6 +1,8 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "localStorage": "TodoApp",
+    "connector": "memory",
+    "file": "data/db.json"
   }
 }

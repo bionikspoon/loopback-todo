@@ -1,0 +1,31 @@
+{
+  "name": "loopback-todo",
+  "description": "Loopback angular todo.",
+  "authors": [
+    "Manu Phatak<bionikspoon@gmail>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "todo",
+    "loopback",
+    "angular",
+    "manu",
+    "phatak"
+  ],
+  "homepage": "https://github.com/bionikspoon/loopback-todo",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.3",
+    "angular-resource": "1.5.3",
+    "bootstrap": "3.3.6",
+    "font-awesome": "^4.5.0"
+  }
+}
