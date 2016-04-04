@@ -1,11 +1,20 @@
 {
   "name": "Todo",
+  "description": "List of Todos",
   "base": "PersistedModel",
   "idInjection": true,
+  "trackChanges": true,
+  "strict": "validate",
+  "persistUndefinedAsNull": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
+    "id": {
+      "id": true,
+      "type": "string",
+      "defaultFn": "guid"
+    },
     "title": {
       "type": "string",
       "required": true

@@ -27,5 +27,6 @@
     "angular-resource": "1.5.3",
     "bootstrap": "3.3.6",
     "font-awesome": "^4.5.0"
-  }
+  },
+  "appPath": "client/ngapp"
 }

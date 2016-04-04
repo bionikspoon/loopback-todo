@@ -1,0 +1,6 @@
+{
+  "name": "RemoteTodo",
+  "base": "Todo",
+  "trackChanges": false,
+  "enableRemoteReplication": true
+}
